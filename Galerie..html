@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Galerie.css" rel="stylesheet">
+   <title>Mister cook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+        <li><a href="#acceuil">Acceuil</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+              <ul>  
+              <li><a href="#menu-cite-essalama">Menu Cité Essalama</a></li>
+              <li><a href="#menu-agadir-bay">Menu Agadir Bay</a></li>
+                <li><a href="#menu-hay-mohammadi">Menu Hay Mohammadi</a></li>
+              </ul>
+              </div>
+        </li>
+        <li><a href="#notre-histoire">Notre-histoire</a></li>
+        <li><a href="#gallerie">Gallerie</a></li>
+    </ul>
+</nav>
+<div class="gallery-section">
+  <div class="titles">
+      <h2 onclick="showGallery(0)">CITE ASALAM</h2>
+      <h2 onclick="showGallery(1)">AGADIR</h2>
+      <h2 onclick="showGallery(2)">HAY MOHAMMADI</h2>
+  </div>
+  <div class="galleries">
+      <!-- Gallery 1 -->
+      <div class="gallery" id="gallery-0">
+          <img src="i" alt="Image 1">
+          <img src="image2.jpg" alt="Image 2">
+          <img src="image3.jpg" alt="Image 3">
+          <img src="image4.jpg" alt="Image 4">
+          <img src="image5.jpg" alt="Image 5">
+          <img src="image6.jpg" alt="Image 6">
+          <img src="image7.jpg" alt="Image 7">
+          <img src="image8.jpg" alt="Image 8">
+      </div>
+      <!-- Gallery 2 -->
+      <div class="gallery" id="gallery-1">
+          <img src="image9.jpg" alt="Image 9">
+          <img src="image10.jpg" alt="Image 10">
+          <img src="image11.jpg" alt="Image 11">
+          <img src="image12.jpg" alt="Image 12">
+          <img src="image13.jpg" alt="Image 13">
+          <img src="image14.jpg" alt="Image 14">
+          <img src="image15.jpg" alt="Image 15">
+          <img src="image16.jpg" alt="Image 16">
+      </div>
+      <!-- Gallery 3 -->
+      <div class="gallery" id="gallery-2">
+          <img src="image17.jpg" alt="Image 17">
+          <img src="image18.jpg" alt="Image 18">
+          <img src="image19.jpg" alt="Image 19">
+          <img src="image20.jpg" alt="Image 20">
+          <img src="image21.jpg" alt="Image 21">
+          <img src="image22.jpg" alt="Image 22">
+          <img src="image23.jpg" alt="Image 23">
+          <img src="image24.jpg" alt="Image 24">
+      </div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="Galerie-section">
+    <h1>CITE ASALAM</h1>
+    <h1>AGADIR BAY</h1>
+    <h1>HAY MOHAMMADI</h1>
+      </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <p>Mistercook Cité Essalam<br>
+            <i class="material-icons">location_on</i> N87 Av. Abderrahmane Ben Zidan<br>
+            <a href="#" class="Directions">Get Directions</a></p>
+            
+            <p>Mistercook Hay Mohammadi<br>
+            <i class="material-icons">location_on</i> Résidence ISLANE GH16 Magazin N 01 Immeuble 103<br>
+            <a href="#" class="Directions">Get Directions</a></p>
+            
+            <p>Mistercook Agadir Bay<br>
+            <i class="material-icons">location_on</i> Agadir bay, N° 22, Imm. 10<br>
+            <a href="#" class="Directions">Get Directions</a></p>
+        </div>
+        <div class="footer-right">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu CITE SALAM</a></li>
+                <li><a href="#">Menu AGADIR BAY</a></li>
+                <li><a href="#">MENU HAY MOHAMMADI</a></li>
+                <li><a href="#">Notre Histoire</a></li>
+                <li><a href="#">GALERIE</a></li>
+                <li><a href="#">Contactez-Nous</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Français</a></li>
+                <li><a href="#">العربية</a></li>
+                <li><a href="#">English</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-left">
+            <p>Copyright © 2024 Mistercook. All Rights Reserved.</p>
+        </div>
+        <div class="footer-bottom-right">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="galleries.js"></script>
+</body>
+</html>

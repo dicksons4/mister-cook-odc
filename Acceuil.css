@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -239,4 +241,56 @@ max-height: 400px;
     font-family: "Urbanist", sans-serif;
     font-size: 21px;
     font-weight: 600;
+}
+/*Css Coté Menu with css and javascript*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+.menu-item {
+  position: relative;
+  display: inline-block;
+  font-family:Josefin Sans;
+}
+
+.menu-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+.menu-link {
+  background-color: #575757;
+}
+
+.sub-menu {
+  width:250px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  margin-top: 20px;
+  border-radius:14px ;
+  padding:12px;
+}
+
+.sub-menu-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  display: block;
+  font-family:Josefin Sans;
+}
+
+.sub-menu-link:hover {
+  background-color: #575757;
+}
+
+/*.menu-item:hover .sub-menu {
+  display: block;
+}*/
+.show-menu{
+  display:block;
 }

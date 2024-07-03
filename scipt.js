@@ -32,3 +32,15 @@ function displayReviews(reviews) {
         reviewsContainer.appendChild(reviewDiv);
     });
 }
+
+/*Nav Menu  */
+const menubtn=document.getElementById("menuid")
+const submenu=document.querySelector(".sub-menu")
+menubtn.addEventListener("mouseover",function(){
+submenu.classList.toggle("show-menu");
+})
+menubtn.addEventListener("mouseout",function(){
+submenu.classList.remove("show-menu")
+})
+
+

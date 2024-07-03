@@ -37,12 +37,11 @@ function displayReviews(reviews) {
 }
 
 /*script for menu hover */
-const menubtn = documentElementById("navbarDropdown");
+const menubtn = documentElementById("nav-item dropdown");
 const submenu = document.querySelector("sub-menu");
 menubtn.addEventListener("mouseover", function () {
   submenu.classList.toggle("show-menu");
 });
-
 menubtn.addEventListener("mouseout", function () {
   submenu.classList.remove("show-menu");
 });

@@ -358,3 +358,7 @@ li:before {
 }
 
 /*--- Contact us styling section ---*/
+/*--- menu show barcode -------*/
+.show-menu{
+  display:block;
+}

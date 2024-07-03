@@ -36,12 +36,35 @@ function displayReviews(reviews) {
   });
 }
 
+
 /*script for menu hover */
-const menubtn = documentElementById("nav-item dropdown");
-const submenu = document.querySelector("sub-menu");
+const menubtn = document.getElementById("sub-menu-link");
+const submenu = document.querySelector(".sub-menu");
+const outmenu=document.querySelector(".nav-item");
 menubtn.addEventListener("mouseover", function () {
-  submenu.classList.toggle("show-menu");
+  submenu.classList.toggle("sub-menu-display");
 });
-menubtn.addEventListener("mouseout", function () {
-  submenu.classList.remove("show-menu");
+outmenu.addEventListener("mouseout", function () {
+  submenu.classList.remove("sub-menu-display");
 });
+
+/* Scipt Slideshow*/
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("carousel-item");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}

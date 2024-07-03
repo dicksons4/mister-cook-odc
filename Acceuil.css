@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -357,8 +355,83 @@ li:before {
   font-weight: 600;
 }
 
-/*--- Contact us styling section ---*/
-/*--- menu show barcode -------*/
-.show-menu{
-  display:block;
+/**/
+.menu-dropdown{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
 }
+.sub-menu {
+    color: #fff;
+    text-decoration: none;
+    display: none;
+  }
+  .li-link{
+    padding:20px;
+  }
+  
+  .li-link:hover {
+    background-color: #575757;
+    padding:8px;
+  }
+  
+  .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    width: 250px;
+    border-radius: 10px;
+    z-index: 999;
+    margin-top:25px;
+    justify-content: center;
+    display:none;
+  }
+ 
+  .sub-menu-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+    width: auto;
+    height:50px;
+    display: block;
+  }
+  
+  .sub-menu-link:hover {
+    background-color: #575757;
+  }
+  
+ /* .menu-item:hover .sub-menu {
+    display: block;
+  }*/
+  .sub-menu-display{
+    display: block;
+  }
+
+
+  /*slideshow */
+  .carousel-item img{
+    height: 100%;
+    width: 100%;
+  }
+  .hero{
+    display:flex;
+    width: 100%;
+    height: 600px;
+    background-color: #eb0029;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 10px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active {
+    background-color: #717171;
+  }
